@@ -13,7 +13,7 @@ function Section1() {
             <div className='mb-[600px]'>
                 <div className='relative '>
                     <img src={bg} alt="Background" className='w-full h-[600px] absolute z-0' />
-                    <div className='flex flex-col items-start absolute z-10 top-[50%] translate-y-1/2 px-[100px] overflow-hidden'>
+                    <div className='flex flex-col items-start absolute z-10 top-[50%] translate-y-1/2 px-[150px] overflow-hidden'>
                         <h1 className='text-white text-[1.5rem] font-bold mb-[20px]'>
                             <span className='text-[#f48c06]'>Studying</span> Online is now
                             <br />

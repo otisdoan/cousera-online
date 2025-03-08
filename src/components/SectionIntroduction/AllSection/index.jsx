@@ -8,14 +8,14 @@ function AllSection() {
     return (
         <>
             <Section1 />
-            <div className="bg-[#f5f5f5] px-[100px]">
+            <div className="bg-[#f5f5f5] px-[150px]">
                 <Section2 />
             </div>
             <Section3 />
             <div className="bg-[#f5f5f5] px-[250px]">
                 <Section4 />
             </div>
-            <div className="px-[100px]">
+            <div className="px-[150px]">
                 <Section5 />
             </div>
         </>

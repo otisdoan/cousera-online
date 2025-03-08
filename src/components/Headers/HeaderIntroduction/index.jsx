@@ -7,7 +7,7 @@ function HeaderIntroduction() {
     return (
         <>
             <div className=''>
-                <div className='bg-[#6f3dff] flex items-center justify-between py-[20px] px-[100px]'>
+                <div className='bg-[#6f3dff] flex items-center justify-between py-[20px] px-[150px]'>
                     <div className='flex items-center'>
                         <div className='w-[60px] mr-[50px]'>
                            <Link to='/'> <img src={logo} className='w-full' /> </Link>

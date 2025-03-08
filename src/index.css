@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.ant-carousel .slick-initialized .slick-slide {
-    display: flex !important;
-}

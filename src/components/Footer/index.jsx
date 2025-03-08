@@ -7,7 +7,7 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 function Footer() {
     return (
         <>
-            <div className="bg-[#282943] px-[100px] py-[50px] text-white">
+            <div className="bg-[#282943] px-[150px] py-[50px] text-white">
                 <div className="flex text-[0.9rem] font-light">
                     <div className="w-1/4 flex flex-col items-start gap-y-3 ">
                         <span className="font-bold text-[1rem]">Cousera</span>
