@@ -12,7 +12,7 @@ function AllSection() {
                 <Section2 />
             </div>
             <Section3 />
-            <div className="bg-[#f5f5f5] px-[250px]">
+            <div className="bg-[#f5f5f5] px-[150px]" id="cousera">
                 <Section4 />
             </div>
             <div className="px-[150px]">

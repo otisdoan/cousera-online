@@ -19,7 +19,7 @@ function HeaderIntroduction() {
                     <div className='flex items-center'>
                         <div className='flex gap-x-[20px] text-white mr-[70px] text-[0.9rem]'>
                             <Link to='#'>Home</Link>
-                            <Link to='#'>Courses</Link>
+                            <Link to='/#cousera'>Courses</Link>
                             <Link to='#'>About Us</Link>
                         </div>
                         <div className='flex gap-x-5 text-[0.9rem]'>
