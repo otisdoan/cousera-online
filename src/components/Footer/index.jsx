@@ -49,7 +49,7 @@ function Footer() {
                                     <Button className="font-bold text-[1rem] text-white bg-[#49bbbd]">Subscribe</Button>
                                 </>
                             }
-                            className="rounded-[10px] w-full bg-[#2b2e3c] placeholder-white"
+                            className="rounded-[10px] w-full bg-[#2b2e3c] placeholder-white text-white"
                         />
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import Section2 from "../Section2";
 import Section3 from "../Section3";
 import Section4 from "../Section4";
 import Section5 from "../Section5";
+import Section6 from "../Section6";
 
 function AllSection() {
     return (
@@ -17,6 +18,9 @@ function AllSection() {
             </div>
             <div className="px-[150px]">
                 <Section5 />
+            </div>
+            <div className="bg-[#f5f5f5] px-[150px]">
+                <Section6 />
             </div>
         </>
     )
