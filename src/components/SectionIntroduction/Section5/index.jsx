@@ -1,13 +1,15 @@
-import React from 'react';
-import { Carousel } from "antd";
+import React, { useRef } from 'react';
+import { Button, Carousel } from "antd";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import student1 from '../../../assets/images/student1.png';
 import student2 from '../../../assets/images/student2.png';
 import student3 from '../../../assets/images/image3.png';
 import student4 from '../../../assets/images/student4.png';
-
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 function Section5() {
+    const carouselRef = useRef();
     const students = [
         {
             image: student1,
@@ -32,22 +34,19 @@ function Section5() {
     ]
     return (
         <>
-            <div className='bg-[#e3edf7] h-[550px] py-[70px] px-[30px]'>
+            <div className='bg-[#e3edf7] h-[550px] py-[70px] px-[30px] relative'>
                 <h1 className='font-bold mb-[30px] text-[1.1rem]'>What our students have to say</h1>
                 <Carousel
-                    arrows
-                    infinite={true}
+                    ref={carouselRef}
                     slidesToShow={4}
                     slidesToScroll={1}
-                    // prevArrow={<IoIosArrowDropleftCircle />}
-                    // nextArrow={<IoIosArrowDroprightCircle />}
                     autoplay={true}
                     autoplaySpeed={2000}
 
                 >
                     {students.map((element, index) => (
                         <div key={index} className='px-4'>
-                            <div className='flex flex-col items-center justify-center bg-white rounded-[20px] mb-[50px] h-[350px] text-center px-[25px] py-[10px] border-[1px] '>
+                            <div className='flex flex-col bg-white rounded-[20px] mb-[40px] h-[350px] text-center px-[25px] border-[1px] pt-[25px]'>
                                 <div className='flex flex-col justify-center items-center mb-[15px]'>
                                     <img src={element.image} className='w-[70px]' />
                                     <span className='text-[1.1rem] font-medium '>{element.name}</span>
@@ -57,6 +56,12 @@ function Section5() {
                         </div>
                     ))}
                 </Carousel>
+                <div className='rounded-full h-[30px] w-[30px] bg-[#49bbbd] text-white flex items-center justify-center cursor-pointer absolute top-[50%] translate-x-[-50%] left-[45px]' onClick={() => carouselRef.current.prev()}>
+                    <MdKeyboardArrowLeft />
+                </div>
+                <div className='rounded-full h-[30px] w-[30px] bg-[#49bbbd] text-white flex items-center justify-center absolute top-[50%] translate-x-[-50%] right-[10px]' onClick={() => carouselRef.current.next()}>
+                    <MdKeyboardArrowRight />
+                </div>
             </div>
         </>
     )
