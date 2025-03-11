@@ -43,14 +43,14 @@ function Footer() {
                         </div>
                         <span className="font-bold text-[0.9rem]">Subscribe to our Newsletter</span>
                         <Input
-                            placeholder="Enter your Email"
-                            suffix={
-                                <>
-                                    <Button className="font-bold text-[1rem] text-white bg-[#49bbbd]">Subscribe</Button>
-                                </>
-                            }
-                            className="rounded-[10px] w-full bg-[#2b2e3c] placeholder-white text-white"
-                        />
+                                placeholder="Enter your Email"
+                                suffix={
+                                    <>
+                                        <Button className="font-bold text-[1rem] text-white bg-[#49bbbd]">Subscribe</Button>
+                                    </>
+                                }
+                                className="rounded-[10px] w-full bg-[#2b2e3c]"
+                            />
                     </div>
                 </div>
                 <div className="mt-[30px] flex items-center justify-between">
