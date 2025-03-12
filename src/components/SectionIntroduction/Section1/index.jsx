@@ -29,17 +29,17 @@ function Section1() {
                                 <Link to="#">Join for free</Link>
                             </div>
                             <div className='flex items-center justify-center gap-x-4'>
-                                <img src={play} alt="Play icon" className='h-[120px] pt-[20px]' />
+                                <img src={play} alt="Play icon" className='h-[120px] pt-[20px] animate-pulse' />
                                 <span className="text-white">Watch how it works</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src={girl} alt="Girl" className='h-[600px] ml-[200px] absolute top-[85px] right-[250px]' />
-                <img src={headerData} alt="Header Data" className='absolute w-[500px] right-[250px] top-[200px]' />
-                <img src={earthIcon} alt="Earth Icon" className='absolute right-[350px] top-[380px] w-[30px]' />
-                <img src={clockIcon} alt="Clock Icon" className='absolute right-[690px] top-[255px] w-[30px]' />
-                <img src={peopleIcon} alt="People Icon" className='absolute right-[690px] top-[470px] w-[30px]' />
+                <img src={girl} alt="Girl" className='h-[600px] ml-[200px] absolute top-[85px] right-[250px] duration-1000 transition-transform hover:scale-105 animate-pulse' />
+                <img src={headerData} alt="Header Data" className='absolute w-[500px] right-[250px] top-[200px] duration-1000 transition-transform hover:scale-105' />
+                <img src={earthIcon} alt="Earth Icon" className='absolute right-[350px] top-[380px] w-[30px] duration-1000 transition-transform hover:scale-105' />
+                <img src={clockIcon} alt="Clock Icon" className='absolute right-[690px] top-[255px] w-[30px] duration-1000 transition-transform hover:scale-105' />
+                <img src={peopleIcon} alt="People Icon" className='absolute right-[690px] top-[470px] w-[30px] duration-1000 transition-transform hover:scale-105' />
             </div>
         </>
     )

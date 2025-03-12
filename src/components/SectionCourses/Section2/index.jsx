@@ -71,35 +71,37 @@ function Section2() {
                     dots={false}
                 >
                     {courses.map((items, index) => (
-                        <div className='px-3'>
-                            <div className='bg-white rounded-[10px] p-4 flex flex-col gap-y-4' key={index}>
-                                <img src={items.image} />
-                                <span className='font-semibold text-[#252641]'>{items.title}</span>
-                                <div className='flex items-center gap-x-2'>
-                                    <img src={items.avatar} />
-                                    <span className='font-bold text-[0.9rem]'>{items.name}</span>
-                                </div>
-                                <Progress
-                                    showInfo={false}
-                                    percent={70}
-                                    status="active"
-                                    strokeColor={{
-                                        from: '#108ee9',
-                                        to: '#87d068',
-                                    }}
-                                />
-                                <div className='flex justify-end'>
-                                    <span>Lesson 5 of 7</span>
+                        <Link to='/courses/courses-detail'>
+                            <div className='px-3'>
+                                <div className='bg-white rounded-[10px] p-4 flex flex-col gap-y-4 shadow-lg hover:scale-105 transition-transform duration-700' key={index}>
+                                    <img src={items.image} />
+                                    <span className='font-semibold text-[#252641]'>{items.title}</span>
+                                    <div className='flex items-center gap-x-2'>
+                                        <img src={items.avatar} />
+                                        <span className='font-bold text-[0.9rem]'>{items.name}</span>
+                                    </div>
+                                    <Progress
+                                        showInfo={false}
+                                        percent={70}
+                                        status="active"
+                                        strokeColor={{
+                                            from: '#108ee9',
+                                            to: '#87d068',
+                                        }}
+                                    />
+                                    <div className='flex justify-end'>
+                                        <span>Lesson 5 of 7</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </Carousel>
                 <div className='flex items-center justify-end gap-x-4 mt-[20px]'>
                     <div className='bg-[#49bbbd] flex items-center justify-center w-[30px] h-[30px] rounded-[5px] cursor-pointer' onClick={handlePrev}>
                         <MdKeyboardArrowLeft className='text-white' />
                     </div>
-                    <div className='bg-[#49bbbd] flex items-center justify-center w-[30px] h-[30px] rounded-[5px] cursor-pointer'onClick={handleNext}>
+                    <div className='bg-[#49bbbd] flex items-center justify-center w-[30px] h-[30px] rounded-[5px] cursor-pointer' onClick={handleNext}>
                         <MdKeyboardArrowRight className='text-white' />
 
                     </div>

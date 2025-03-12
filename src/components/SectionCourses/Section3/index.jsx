@@ -54,7 +54,7 @@ function Section3() {
                 <h2 className="font-bold mb-[20px]">Choice favourite course from top category</h2>
                 <div className='flex gap-8 flex-wrap items-center justify-center'>
                     {course.map((items, index) => (
-                        <div key={index} className='w-1/5 flex flex-col bg-white rounded-[10px] p-4 items-center pb-[30px]'>
+                        <div key={index} className='w-1/5 flex flex-col bg-white rounded-[10px] p-4 items-center pb-[30px] shadow-lg hover:scale-105 duration-500 transition-transform'>
                             <div className={`w-[60px] h-[60px] flex items-center rounded-[5px] justify-center border-[1px] ${index === 0 ? `bg-[#c9ebec]` : index === 1 ? `bg-[#ced5fa]` : 
                                 index === 2 ?  `bg-[#e2f0ff]`: index === 3 ? `bg-[#b3f0ea]` : index === 4 ? `bg-[#fcddb5]`: index === 5 ? `bg-[#fad1ce]`: index === 6 ? `bg-[#bebec6]`:
                                 index === 7 ? `bg-[#b3f0ea]`: `` }`}>

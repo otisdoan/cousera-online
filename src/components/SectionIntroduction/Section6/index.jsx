@@ -45,12 +45,12 @@ function Section6() {
                 <h1 className="text-[1.7rem] font-bold text-[#49bbbd] text-center mb-[50px]">Affordable pricing</h1>
                 <div className="flex gap-x-4 justify-center">
                     {pricing.map((item, index) => (
-                        <div key={index} className="flex flex-col w-[300px] border-[1px] p-6 bg-white rounded-[10px]">
+                        <div key={index} className="flex flex-col w-[300px] border-[1px] p-6 bg-white rounded-[10px] shadow-lg hover:scale-105 duration-700 transition-transform">
                             <img src={item.type} className='w-[150px] mb-[20px]' />
                             <h2 className='text-[1.4rem] font-bold mb-[20px] whitespace-nowrap'>{item.price}</h2>
                             <div className='h-[330px] flex flex-col gap-y-2'>
                                 {item.benefit.map((element, indexE) => (
-                                    <div key={indexE} className='flex items-center gap-x-4 gap-y-4'>
+                                    <div key={indexE} className='flex items-center gap-x-4 gap-y-4 duration-500 transition-transform'>
                                         <div className=''>
                                             <FaCheck className={`w-[25px] h-[25px] rounded-[50%] flex items-center justify-center text-[0.9rem] p-2 ${index === 0 ? ` bg-[#e2e2e2]` : index === 1 ? `bg-[#fdcb6e]` : `bg-[#aef8e3]`}`} />
                                         </div>

@@ -12,7 +12,7 @@ function Section2() {
                     needed to run a successful school or office.
                 </p>
                 <div className="flex items-center justify-center gap-x-4">
-                    <div className="w-[260px] bg-white rounded-[20px] relative">
+                    <div className="w-[260px] bg-white rounded-[20px] relative duration-500 transition-transform hover:scale-105">
                         <img src={contact} className='w-[80px] absolute top-[-35px] left-[50%] translate-x-[-50%]' />
                         <h3 className='font-bold mt-[60px] mb-[20px] text-[#2f327d]'>
                             Online Billing,
@@ -29,7 +29,7 @@ function Section2() {
                             invoices and contracts
                         </p>
                     </div>
-                    <div className="w-[260px] bg-white rounded-[20px] relative">
+                    <div className="w-[260px] bg-white rounded-[20px] relative duration-500 transition-transform hover:scale-105">
                         <img src={calendar} className='w-[80px] absolute top-[-35px] left-[50%] translate-x-[-50%]' />
                         <h3 className='font-bold mt-[60px] mb-[20px] text-[#2f327d]'>
                             Easy Scheduling &
@@ -46,7 +46,7 @@ function Section2() {
                             attendance
                         </p>
                     </div>
-                    <div className="w-[260px] bg-white rounded-[20px] relative">
+                    <div className="w-[260px] bg-white rounded-[20px] relative duration-500 transition-transform hover:scale-105">
                         <img src={group} className='w-[80px] absolute top-[-35px] left-[50%] translate-x-[-50%]' />
                         <h3 className='font-bold mt-[60px] mb-[20px] text-[#2f327d]'>
                             Teacher Tracking

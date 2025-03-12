@@ -49,7 +49,7 @@ function Section4() {
                 >
                     {courses.map((items, index) => (
                         <div className="px-4">
-                            <div className="bg-white rounded-[10px] flex flex-col gap-y-2 p-4 pb-[20px]" key={index}>
+                            <div className="bg-white rounded-[10px] flex flex-col gap-y-2 p-4 pb-[20px] shadow-lg hover:scale-105 duration-500 transition-transform" key={index}>
                                 <img src={items.image} />
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-x-1">

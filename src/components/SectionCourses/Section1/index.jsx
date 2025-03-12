@@ -16,10 +16,10 @@ function Section1() {
                         <br />
                         interactive way
                     </p>
-                    <Button className="bg-[#49bbbd] text-white font-bold w-[160px] p-5 rounded-[10px]">Start learning now</Button>
+                    <Button className="bg-[#49bbbd] text-white font-bold w-[160px] p-5 rounded-[10px] animate-pulse">Start learning now</Button>
                 </div>
                 <div className="w-1/2">
-                    <img src={section1C} className="w-full h-full"/>
+                    <img src={section1C} className="w-full h-full animate-pulse"/>
                 </div>
             </div>
         </>

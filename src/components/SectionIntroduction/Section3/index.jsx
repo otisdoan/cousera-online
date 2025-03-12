@@ -13,7 +13,7 @@ function Section3() {
                     The platform provides courses for both students and working people.
                 </p>
                 <div className="flex justify-center gap-x-4">
-                    <div className="w-[250px] relative">
+                    <div className="w-[250px] relative duration-500 transition-transform hover:scale-110">
                         <img src={workers} className='absolute z-0'/>
                         <div className='absolute z-[1] left-[50%] top-[50px] translate-x-[-50%]'>
                             <h3 className=' text-white font-medium mb-[10px]'>FOR WORKERS</h3>
@@ -22,7 +22,7 @@ function Section3() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[250px] relative">
+                    <div className="w-[250px] relative duration-500 transition-transform hover:scale-110">
                         <img src={students} className='absolute z-0'/>
                         <div className='absolute z-[1] left-[50%] top-[50px] translate-x-[-50%]'>
                             <h3 className=' text-white font-medium mb-[10px]'>FOR STUDENTS</h3>

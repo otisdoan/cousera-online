@@ -11,7 +11,7 @@ function Section5() {
                         <br />
                         sitamet, consectetur adipiscing elit, sed do eiusmod tempor
                     </p>
-                    <Button className="rounded-[10px] text-white px-[20px] py-[10px] bg-[#49bbbd] border-none">Start learning now</Button>
+                    <Button className="rounded-[10px] text-white px-[20px] py-[10px] bg-[#49bbbd] border-none animate-pulse">Start learning now</Button>
                 </div>
             </div>
         </>

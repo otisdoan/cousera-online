@@ -27,9 +27,9 @@ function HeaderOther() {
                         </div>
                     </div>
                     <div className='flex items-center'>
-                        <div className='flex gap-x-[20px] text-white mr-[70px] text-[0.9rem]'>
+                        <div className='flex gap-x-[20px] mr-[70px] text-[0.9rem]'>
                             <Link to='#'>Home</Link>
-                            <Link to='#'>My Courses</Link>
+                            <Link to='/courses/process-courses'>My Courses</Link>
                         </div>
                         <div className='flex items-center gap-x-4'>
                         <Avatar icon={<UserOutlined />} />

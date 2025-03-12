@@ -46,7 +46,7 @@ function Section5() {
                 >
                     {students.map((element, index) => (
                         <div key={index} className='px-4'>
-                            <div className='flex flex-col bg-white rounded-[20px] mb-[40px] h-[350px] text-center px-[25px] border-[1px] pt-[25px]'>
+                            <div className='flex flex-col bg-white rounded-[20px] mb-[40px] h-[350px] text-center px-[25px] border-[1px] pt-[25px] duration-500 transition-transform hover:scale-110 shadow-lg'>
                                 <div className='flex flex-col justify-center items-center mb-[15px]'>
                                     <img src={element.image} className='w-[70px]' />
                                     <span className='text-[1.1rem] font-medium '>{element.name}</span>
