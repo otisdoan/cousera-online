@@ -1,6 +1,7 @@
 import { ConfigProvider, Tabs } from "antd";
 import { useState } from "react";
 import ContentOnGoing from "../ContentOnGoing";
+import ConntentComplete from "../ContentCompleted";
 
 function Section2() {
     const [activeComplete, setActiveComplete] = useState(false);
@@ -30,7 +31,7 @@ function Section2() {
                     <span>Completed</span>
                 </div>
             ),
-            children: 'Content of Tab Pane 2',
+            children: <ConntentComplete />,
         }
     ]
     return (
