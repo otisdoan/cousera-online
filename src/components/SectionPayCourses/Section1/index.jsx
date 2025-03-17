@@ -41,16 +41,18 @@ function Section1() {
                         arrows={false}
                     >
                         {offers.map((items, index) => (
-                            <div className="px-4 relative" key={index}>
-                                <img src={items.image} className="w-[350px] h-[280px]" />
-                                <div className="w-[350px] h-[280px] bg-black absolute top-0 opacity-25 rounded-[10px]"></div>
-                                <div className="rounded-[10px] absolute top-[30px] left-[5px] px-[50px]">
-                                    <div className="flex flex-col gap-y-4">
-                                        <div className="w-[70px] h-[60px] flex items-center justify-center bg-[#49bbbd] rounded-[10px]">
-                                            <span className="font-bold text-white text-[1.6rem]">{index === 1 ? `10%`: `50%`}</span>
+                            <div className='px-4 shadow-lg duration-700 hover:scale-105 transition-transform'>
+                                <div className="relative" key={index}>
+                                    <img src={items.image} className="w-full h-[350px]" />
+                                    <div className="w-full h-full bg-black absolute top-0 opacity-25 rounded-[10px]"></div>
+                                    <div className="rounded-[10px] absolute top-[30px] left-[5px] px-[50px] right-[5px]">
+                                        <div className="flex flex-col gap-y-4">
+                                            <div className="w-[70px] h-[60px] flex items-center justify-center bg-[#49bbbd] rounded-[10px]">
+                                                <span className="font-bold text-white text-[1.6rem]">{index === 1 ? `10%` : `50%`}</span>
+                                            </div>
+                                            <h2 className="font-bold text-[1.2rem] text-white">{items.title}</h2>
+                                            <p className="text-[0.9rem] text-white">{items.desciption}</p>
                                         </div>
-                                        <h2 className="font-bold text-[1.2rem] text-white">{items.title}</h2>
-                                        <p className="text-[0.9rem] text-white">{items.desciption}</p>
                                     </div>
                                 </div>
                             </div>
