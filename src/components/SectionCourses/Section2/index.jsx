@@ -56,7 +56,7 @@ function Section2() {
     }
     return (
         <>
-            <div className='pt-[20px] pb-[70px]'>
+            <div className='pt-[20px] pb-[70px] ' style={{animationTimeline: 'view()'}}>
                 <div className='flex items-center justify-between mb-[20px]'>
                     <h2 className='text-[1.2rem] font-bold'>Welcome back, ready for your next lesson?</h2>
                     <Link to='#' className='text-[#49bbbd] text-[0.9rem] font-bold'>View hisotry</Link>
@@ -71,9 +71,9 @@ function Section2() {
                     dots={false}
                 >
                     {courses.map((items, index) => (
-                        <Link to='/courses/courses-detail'>
+                        <Link to='/courses/courses-detail' key={index}>
                             <div className='px-3'>
-                                <div className='bg-white rounded-[10px] p-4 flex flex-col gap-y-4 shadow-lg hover:scale-105 transition-transform duration-700' key={index}>
+                                <div className='bg-white rounded-[10px] p-4 flex flex-col gap-y-4 shadow-lg hover:scale-105 transition-transform duration-700' >
                                     <img src={items.image} />
                                     <span className='font-semibold text-[#252641]'>{items.title}</span>
                                     <div className='flex items-center gap-x-2'>

@@ -45,7 +45,7 @@ function ConntentComplete() {
         <>
             <div className='flex items-center gap-12 flex-wrap justify-center pb-[60px]'>
                 {courses.map((items, index) => (
-                    <div key={index} className='bg-white rounded-[10px] shadow-lg hover:scale-105 transition-transform p-4 w-1/4'>
+                    <div key={index} className='bg-white rounded-[10px] shadow-lg hover:scale-105 transition-transform duration-700 p-4 w-1/4'>
                         <img src={p1}/>
                         <div className='flex justify-between items-center my-[15px]'>
                             <div className='flex items-center gap-x-2'>

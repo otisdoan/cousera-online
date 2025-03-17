@@ -3,7 +3,7 @@ import section1C from '../../../assets/images/section1C.png';
 function Section1() {
     return (
         <>
-            <div className="flex justify-between pt-[40px] pb-[50px]">
+            <div className="flex justify-between pt-[40px] pb-[50px]" >
                 <div className="w-1/2 flex flex-col justify-between">
                     <p className="font-semibold mb-[30px] text-[1.5rem]">By Themadbrains in <span className="text-[#49bbbd]">inspiration</span></p>
                     <p className="font-bold text-[2.4rem] text-white mb-[30px]">

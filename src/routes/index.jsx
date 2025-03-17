@@ -2,11 +2,15 @@ import AllSectionCourses from "../components/SectionCourses/AllSectionCourses";
 import AllSection from "../components/SectionIntroduction/AllSection";
 import Courses from "../pages/Courses";
 import CoursesDetail from "../pages/CoursesDetail";
+import ExamQuiz from "../pages/ExamQuiz";
+import GradeCourses from "../pages/GradeCourses";
 import Introduction from "../pages/Introduction";
 import Login from "../pages/Login";
 import PayCourses from "../pages/PayCourses";
+import PracticeQuiz from "../pages/PracticeQuiz";
 import ProcessCourses from "../pages/ProcessCourses";
 import Register from "../pages/Register";
+import ViewCourses from "../pages/ViewCourses";
 
 export const routes = [
     {
@@ -46,6 +50,22 @@ export const routes = [
             {
                 path: 'process-courses',
                 element: <ProcessCourses />
+            },
+            {
+                path: 'view-courses',
+                element: <ViewCourses />
+            },
+            {
+                path: 'view-courses/practice-quiz',
+                element: <PracticeQuiz />
+            },
+            {
+                path: 'view-courses/practice-quiz/exam-quiz',
+                element: <ExamQuiz />
+            },
+            {
+                path: 'view-courses/practice-quiz/result-quiz',
+                element: <GradeCourses />
             }
         ]
     }

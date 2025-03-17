@@ -45,7 +45,7 @@ function ContentOnGoing() {
         }
     ]
     const handleDetail = () => {
-        navigate('/courses/courses-detail');
+        navigate('/courses/view-courses');
     }
     return (
         <>
