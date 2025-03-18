@@ -21,6 +21,7 @@ function ExamQuiz() {
     const handleContinue = () => {
         if (quantity <= 20) {
             setQuantity(quantity + 1);
+            
         } else {
             setQuantity(20);
         }

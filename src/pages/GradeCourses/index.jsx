@@ -12,6 +12,9 @@ function GradeCourses() {
     const handleRetry = () => {
         navigate(-2);
     }
+    const handleFeedback = () => {
+        navigate('/courses/view-courses/practice-quiz/result-quiz/view-feedback')
+    }
     return (
         <>
             <div className="px-[150px] my-[20px]">
@@ -99,7 +102,7 @@ function GradeCourses() {
                             </div>
                             <div className="flex items-center justify-end gap-x-[50px] mr-[30px] mt-[40px]">
                                 <Button className="bg-[#49bbbd] font-bold text-white px-[35px] py-[18px]">View Submission</Button>
-                                <Button className="bg-[#49bbbd] font-bold text-white px-[35px] py-[18px]">See feedback</Button>
+                                <Button className="bg-[#49bbbd] font-bold text-white px-[35px] py-[18px]" onClick={handleFeedback}>See feedback</Button>
                             </div>
                         </div>
                     </div>

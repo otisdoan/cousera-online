@@ -11,6 +11,7 @@ import PracticeQuiz from "../pages/PracticeQuiz";
 import ProcessCourses from "../pages/ProcessCourses";
 import Register from "../pages/Register";
 import ViewCourses from "../pages/ViewCourses";
+import ViewFeedback from "../pages/ViewFeedback";
 
 export const routes = [
     {
@@ -66,6 +67,10 @@ export const routes = [
             {
                 path: 'view-courses/practice-quiz/result-quiz',
                 element: <GradeCourses />
+            },
+            {
+                path: 'view-courses/practice-quiz/result-quiz/view-feedback',
+                element: <ViewFeedback />
             }
         ]
     }
