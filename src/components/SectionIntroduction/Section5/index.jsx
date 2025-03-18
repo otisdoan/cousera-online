@@ -36,41 +36,42 @@ function Section5() {
     ]
     return (
         <>
-            <motion.div
-                className='bg-[#e3edf7] h-[550px] py-[70px] px-[30px] relative'
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 150 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
-            >
-                <h1 className='font-bold mb-[30px] text-[1.1rem]'>What our students have to say</h1>
-                <Carousel
-                    ref={carouselRef}
-                    slidesToShow={4}
-                    slidesToScroll={1}
-                    autoplay={true}
-                    autoplaySpeed={2000}
-
+            <div className='my-[50px]'>
+                <motion.div
+                    className='bg-[#e3edf7] h-[550px] py-[70px] px-[30px] relative '
+                    whileInView={{ opacity: 1, y: 0}}
+                    initial={{ opacity: 0, y: 150 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
                 >
-                    {students.map((element, index) => (
-                        <div key={index} className='px-4'>
-                            <div className='flex flex-col bg-white rounded-[20px] mb-[40px] h-[350px] text-center px-[25px] border-[1px] pt-[25px] duration-500 transition-transform hover:scale-110 shadow-lg'>
-                                <div className='flex flex-col justify-center items-center mb-[15px]'>
-                                    <img src={element.image} className='w-[70px]' />
-                                    <span className='text-[1.1rem] font-medium '>{element.name}</span>
+                    <h1 className='font-bold mb-[30px] text-[1.1rem]'>What our students have to say</h1>
+                    <Carousel
+                        ref={carouselRef}
+                        slidesToShow={4}
+                        slidesToScroll={1}
+                        autoplay={true}
+                        autoplaySpeed={2000}
+                    >
+                        {students.map((element, index) => (
+                            <div key={index} className='px-4'>
+                                <div className='flex flex-col bg-white rounded-[20px] mb-[40px] h-[350px] text-center px-[25px] border-[1px] pt-[25px] duration-500 transition-transform hover:scale-110 shadow-lg'>
+                                    <div className='flex flex-col justify-center items-center mb-[15px]'>
+                                        <img src={element.image} className='w-[70px]' />
+                                        <span className='text-[1.1rem] font-medium '>{element.name}</span>
+                                    </div>
+                                    <p className='font-light'>{element.desciption}</p>
                                 </div>
-                                <p className='font-light'>{element.desciption}</p>
                             </div>
-                        </div>
-                    ))}
-                </Carousel>
-                <div className='rounded-full h-[30px] w-[30px] bg-[#49bbbd] text-white flex items-center justify-center cursor-pointer absolute top-[50%] translate-x-[-50%] left-[45px]' onClick={() => carouselRef.current.prev()}>
-                    <MdKeyboardArrowLeft />
-                </div>
-                <div className='rounded-full h-[30px] w-[30px] bg-[#49bbbd] text-white flex items-center justify-center absolute top-[50%] translate-x-[-50%] right-[10px]' onClick={() => carouselRef.current.next()}>
-                    <MdKeyboardArrowRight />
-                </div>
-            </motion.div>
+                        ))}
+                    </Carousel>
+                    <div className='rounded-full h-[30px] w-[30px] bg-[#49bbbd] text-white flex items-center justify-center cursor-pointer absolute top-[50%] translate-x-[-50%] left-[45px]' onClick={() => carouselRef.current.prev()}>
+                        <MdKeyboardArrowLeft />
+                    </div>
+                    <div className='rounded-full h-[30px] w-[30px] bg-[#49bbbd] text-white flex items-center justify-center absolute top-[50%] translate-x-[-50%] right-[10px]' onClick={() => carouselRef.current.next()}>
+                        <MdKeyboardArrowRight />
+                    </div>
+                </motion.div>
+            </div>
         </>
     )
 }
