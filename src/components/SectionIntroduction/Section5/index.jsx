@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef } from 'react';
 import { Button, Carousel } from "antd";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
@@ -8,6 +9,7 @@ import student3 from '../../../assets/images/image3.png';
 import student4 from '../../../assets/images/student4.png';
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { motion } from "framer-motion";
 function Section5() {
     const carouselRef = useRef();
     const students = [
@@ -34,7 +36,13 @@ function Section5() {
     ]
     return (
         <>
-            <div className='bg-[#e3edf7] h-[550px] py-[70px] px-[30px] relative'>
+            <motion.div
+                className='bg-[#e3edf7] h-[550px] py-[70px] px-[30px] relative'
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 150 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            >
                 <h1 className='font-bold mb-[30px] text-[1.1rem]'>What our students have to say</h1>
                 <Carousel
                     ref={carouselRef}
@@ -62,7 +70,7 @@ function Section5() {
                 <div className='rounded-full h-[30px] w-[30px] bg-[#49bbbd] text-white flex items-center justify-center absolute top-[50%] translate-x-[-50%] right-[10px]' onClick={() => carouselRef.current.next()}>
                     <MdKeyboardArrowRight />
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

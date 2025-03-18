@@ -3,11 +3,12 @@ import { RiSettings5Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowLeftLong } from "react-icons/fa6";
 function ExamQuiz() {
     const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
+    const [time, setTime] = useState(10);
     const question = [
         'A.  Course Details',
         'B. Course Details',
@@ -29,6 +30,21 @@ function ExamQuiz() {
             setQuantity(quantity - 1);
         }
     }
+    useEffect(() => {
+        setTimeout(() => {
+            setTime(time - 1);
+            if (time === 0 && quantity < 20) {
+                setQuantity(quantity + 1)
+                setTime(10);
+            }
+            if (quantity === 20 && time === 0) {
+                navigate('/courses/view-courses/practice-quiz/result-quiz');
+            }
+            if (time === -1) {
+                setTime(10);
+            }
+        }, 1000)
+    }, [time, quantity, navigate])
     return (
         <>
             <div className="px-[150px] mb-[50px]">
@@ -42,8 +58,8 @@ function ExamQuiz() {
                         <span className="text-[0.9rem]">Introduction about XD</span>
                     </div>
                     <div className="flex items-center gap-x-4">
-                        <RiSettings5Fill className="text-[#7a53ed] text-[1.4rem]" />
-                        <IoClose className="text-[#7a53ed] text-[1.4rem] font-bold" />
+                        <RiSettings5Fill className="text-[#7a53ed] text-[1.4rem] cursor-pointer" />
+                        <IoClose className="text-[#7a53ed] text-[2rem] font-bold cursor-pointer" onClick={() => navigate(-1)} />
                     </div>
                 </div>
                 {quantity > 1 && (
@@ -76,7 +92,7 @@ function ExamQuiz() {
                 <div className="flex justify-between items-center mt-[30px]">
                     <div className="bg-[#49bbbd] p-2 rounded-full w-[80px] h-[80px] flex items-center justify-center">
                         <div className="rounded-full border-[4px] border-white w-[60px] h-[60px] flex items-center justify-center">
-                            <span className="font-bold text-white text-[1.4rem]">19</span>
+                            <span className="font-bold text-white text-[1.4rem]">{time}</span>
                         </div>
                     </div>
                     {quantity === 20 ? (

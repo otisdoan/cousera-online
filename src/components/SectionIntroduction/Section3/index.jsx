@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 function Section3() {
     return (
         <>
-            <div className="text-center pb-[250px] bg-[#f5f5f5]" style={{ animationTimeline: 'view()' }}>
+            <div className="text-center pb-[250px] bg-[#f5f5f5]" >
                 <motion.div
                     initial={{opacity: 0, y: 150}}
                     whileInView={{opacity: 1, y: 0}}

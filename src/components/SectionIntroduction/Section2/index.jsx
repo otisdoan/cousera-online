@@ -1,10 +1,18 @@
+/* eslint-disable no-unused-vars */
 import calendar from '../../../assets/images/calendar.png';
 import group from '../../../assets/images/group.png';
 import contact from '../../../assets/images/contact.png';
+import { motion } from 'framer-motion';
 function Section2() {
     return (
         <>
-            <div className="text-center pt-[50px] py-[50px]">
+            <motion.div
+                className="text-center pt-[50px] py-[50px]"
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 150 }}
+                viewport={{ once: true }}
+                transition={{duration: 1}}
+            >
                 <h1 className="text-[1.3rem] font-bold flex justify-center gap-x-2 mb-[10px]"><span className="text-[#2f327d]">All-In-One</span><span className="text-[#00cbb8]">Cloud Software.</span></h1>
                 <p className="text-[0.8rem] font-light mb-[50px]">
                     ITEL is one powerful online software suite that combines all the tools
@@ -64,7 +72,7 @@ function Section2() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
