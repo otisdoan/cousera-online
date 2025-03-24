@@ -43,7 +43,7 @@ function Section4() {
                     slidesToShow={4}
                     slidesToScroll={1}
                     autoplay
-                    autoplaySpeed={1000}
+                    autoplaySpeed={2500}
                     arrows={false}
                     dots={false}
                 >

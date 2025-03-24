@@ -3,13 +3,16 @@ import AllSection from "../components/SectionIntroduction/AllSection";
 import Courses from "../pages/Courses";
 import CoursesDetail from "../pages/CoursesDetail";
 import ExamQuiz from "../pages/ExamQuiz";
+import ForgotPassword from "../pages/ForgotPassword";
 import GradeCourses from "../pages/GradeCourses";
 import Introduction from "../pages/Introduction";
 import Login from "../pages/Login";
 import PayCourses from "../pages/PayCourses";
 import PracticeQuiz from "../pages/PracticeQuiz";
 import ProcessCourses from "../pages/ProcessCourses";
+import Profiles from "../pages/Profiles";
 import Register from "../pages/Register";
+import ResetPassword from "../pages/ResetPassword";
 import ViewCourses from "../pages/ViewCourses";
 import ViewFeedback from "../pages/ViewFeedback";
 
@@ -29,6 +32,14 @@ export const routes = [
             {
                 path: 'register',
                 element: <Register />
+            },
+            {
+                path: 'forgot-password',
+                element: <ForgotPassword />
+            },
+            {
+                path: 'reset-password',
+                element: <ResetPassword />
             },
         ]
     },
@@ -71,6 +82,10 @@ export const routes = [
             {
                 path: 'view-courses/practice-quiz/result-quiz/view-feedback',
                 element: <ViewFeedback />
+            },
+            {
+                path: 'profiles',
+                element: <Profiles />
             }
         ]
     }

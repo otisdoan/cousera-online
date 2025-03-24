@@ -19,7 +19,7 @@ function Section1() {
                     <Button className="bg-[#49bbbd] text-white font-bold w-[160px] p-5 rounded-[10px] animate-pulse">Start learning now</Button>
                 </div>
                 <div className="w-1/2">
-                    <img src={section1C} className="w-full h-full animate-pulse"/>
+                    <img src={section1C} className="w-full h-full"/>
                 </div>
             </div>
         </>
