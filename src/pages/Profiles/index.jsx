@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { useForm } from "antd/es/form/Form";
 import { supabase } from "../../supabase";
 import dayjs from 'dayjs';
+
 function Profiles() {
     const [openModal, setOpenModal] = useState(false);
     const format = 'DD/MM/YYYY';
@@ -41,6 +42,9 @@ function Profiles() {
                     placement: 'topRight',
                 });
                 setOpenModal(false);
+                setTimeout(() => {
+                    window.location.href = '/courses';
+                }, 2000)
             } else {
                 api["error"]({
                     message: 'Thất bại!',
@@ -103,6 +107,12 @@ function Profiles() {
                                     <Form.Item
                                         label={'Fullname'}
                                         name={'name'}
+                                        rules={[
+                                            {
+                                                required: true,
+                                                message: 'Fullname is required'
+                                            }
+                                        ]}
                                     >
                                         <Input />
                                     </Form.Item>

@@ -66,7 +66,7 @@ function HeaderOther() {
                 <div className='bg-[#d7cef3] flex items-center justify-between py-[20px] px-[150px]'>
                     <div className='flex items-center'>
                         <div className='w-[60px] mr-[50px]'>
-                            <a href='/courses'> <img src={logo} className='w-full' /></a>
+                            <Link to='/courses'> <img src={logo} className='w-full' /></Link>
                         </div>
                         <div>
                             <Input placeholder='Search from courses...' suffix={<CiSearch />} className='w-[300px]' />
@@ -74,7 +74,7 @@ function HeaderOther() {
                     </div>
                     <div className='flex items-center'>
                         <div className='flex gap-x-[20px] mr-[70px] text-[0.9rem]'>
-                            <a href='/courses'>Home</a>
+                            <Link to='/courses'>Home</Link>
                             <NavLink to='/courses/process-courses'>My Courses</NavLink>
                         </div>
                         <div className='flex items-center gap-x-4'>
