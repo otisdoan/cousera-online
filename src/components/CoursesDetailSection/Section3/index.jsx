@@ -31,7 +31,7 @@ function Section3() {
                         slidesToShow={3}
                         slidesToScroll={1}
                         autoplay
-                        autoplaySpeed={1000}
+                        autoplaySpeed={2500}
                         dots={false}
                         arrows={false}
                     >

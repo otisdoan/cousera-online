@@ -3,7 +3,7 @@ import image from "../../assets/images/login.png"
 function Login() {
     return (
         <>
-            <div className="flex my-[50px] px-[100px]">
+            <div className="flex my-[50px] px-[150px]">
                 <div className="w-1/2 rounded-lg">
                     <img src={image} className="w-full h-full rounded-lg" />
                 </div>
