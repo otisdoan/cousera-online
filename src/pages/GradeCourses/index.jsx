@@ -47,7 +47,7 @@ function GradeCourses() {
                                                 <IoBook />
                                                 <span className="opacity-75">Lesson 01 : Introduction about XD</span>
                                             </div>
-                                            <span className="opacity-75">30 mins</span>
+                                            <span className="opacity-75">40 mins</span>
                                         </div>
                                     </Link>
                                 ))}
